@@ -1,0 +1,43 @@
+/* Base styles */
+h2 {
+    font-size: 24px;
+    text-align: center; /* Center align headings */
+}
+
+/* For small screens (up to 600px wide) */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* For medium screens (601px to 1200px wide) */
+@media (min-width: 601px) and (max-width: 1200px) {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* For large screens (above 1200px wide) */
+@media (min-width: 1201px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+/* Style the anchor links inside the cards */
+#card a {
+    color: #000; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+/* Additional styling for your section (optional) */
+.parallax {
+    position: relative;
+    /* Other parallax styles can go here */
+}
+
+#plant {
+    width: 100px; /* Adjust as needed */
+}

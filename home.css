@@ -1,0 +1,130 @@
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Parallax Section */
+.parallax {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* Individual parallax layers */
+#hill1, #hill2, #hill3, #hill4, #hill5, #tree, #leaf, #plant {
+    object-fit: cover;
+    z-index: -5;
+}
+
+#hill1 {
+    top: 0;
+}
+
+#hill2 {
+    top: 50px;
+}
+
+#hill3 {
+    top: 100px;
+}
+
+#hill4 {
+    top: 150px;
+}
+
+#hill5 {
+    top: 200px;
+}
+
+#tree, #leaf, #plant {
+    top: 250px;
+    z-index: -4;
+}
+
+/* Text styles */
+#text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Cards with links */
+#card {
+    margin-top: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+#card a {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+}
+
+#card a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Parallax background */
+.parallax::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('hill-background.jpg') no-repeat center center/cover;
+    z-index: -10;
+}
+
+
+

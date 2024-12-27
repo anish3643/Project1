@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculation2.css">
+</head>
+<body>
+    <div class="wrapper">
+    <form name="calculations" onsubmit="fun1()">
+        <h1>GAS GENERATED AND NO. OF COWS REQUIRED</h1>                                            
+        "1. COOKING PER PERSON: "<br>
+        "2. NUMBER OF BULB: "<br>
+        "3. NUMBER OF FAN: "<br>
+        "4. NUMBER OF HEATER: "<br>
+        "5. NUMBER OF TELEVISION: "<br><br>
+        <div class="bb">
+            Enter your choice: <br><input type="number" placeholder="YOUR CHOICE" class="aa" id="choice"/><br><br>
+        </div>  
+        <div class="bb">
+            Requirments : <br><input type="number " placeholder="Requirments" class="aa" id="Requirments"/><br><br>
+        </div>                                          
+       
+        
+       
+        10 KG of cow dunk produces aournd 0.4m**3 bio gas<br><br>
+        Total gas required: <input type="text" id="result" value="0" disabled><br><br>
+        no. of cows required: <input type="number" id="cows" value="0" disabled/><br><br>
+        <input type="button" value="submit" class="btn" onclick="fun1()"/>
+        
+    </form>
+    <script type="text/javascript">
+        function fun1()
+        {
+        let x = parseInt(calculations. Requirments.value);
+        let z = parseInt(calculations.choice.value);
+
+        if(z==1)
+        {
+            let m=x*0.32;
+            let n=(m/0.4)+1;
+            calculations.result.value = m;
+            calculations.cows.value = n;
+        }
+        else if(z==2)
+        {
+            let m=x*0.20;
+            let n=(m/0.4)+1;
+            calculations.result.value = m;
+            calculations.cows.value = n;
+        }
+        else if(z==3)
+        {
+            let m=x*0.40;
+            let n=(m/0.4)+1;
+            calculations.result.value = m;
+            calculations.cows.value = n;
+        }
+        else if(z==4)
+        {
+            let m=x*0.50;
+            let n=(m/0.4)+1;
+            calculations.result.value = m;
+            calculations.cows.value = n;
+        }
+        else if(z==5)
+        {
+            let m=x*0.25;
+            let n=(m/0.4)+1;
+            calculations.result.value = m;
+            calculations.cows.value = n;
+        }       
+    }
+    </script>
+    </div>
+</body>
+</html>

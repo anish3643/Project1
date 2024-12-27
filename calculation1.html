@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculation</title>
+    <link rel="stylesheet" href="calculation1.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+    <form name="calculations" onsubmit="fun1()">
+        <h1>NO. OF OPERATIONS TO BE PERFORMED</h1> 
+        <div class="bb">
+            Enter no. of cows: <br><input type="number " placeholder="NO. OF COWS" class="aa" id="cows"/><br><br>
+        </div>                                           
+       
+        "1 KG of cow dung produced 0.04m**3 bio gas"<br>
+        "10 KG of cow dunk produces aournd 0.4m**3 bio gas"<br><br>
+       
+        OPERATIONS :- <br>
+        1. COOKING PER PERSON : <br>
+        2. NUMBER OF BULB : <br>
+        3. NUMBER OF FAN : <br>
+        4. NUMBER OF HEATER : <br>
+        5. NUMBER OF TELEVISION : <br><br>
+        <div class="bb">
+            Enter your choice:<br> <input type="number" placeholder="YOUR CHOICE" class="aa" id="choice"/>
+        </div> <BR>
+            Total gas produced: <input type="text" id="result" value="0" disabled> m**3<br><br>
+        Operations Output Is: <input type="number" id="operations" value="0" disabled/><br><br>
+        <input type="button" value="submit"  class="btn" onclick="fun1()"/>
+        
+    </form>
+    <script type="text/javascript">
+        function fun1()
+        {
+        let x = parseInt(calculations.cows.value);
+
+        let y=x*0.4;
+        calculations.result.value = y;
+
+        let z = parseInt(calculations.choice.value);
+
+        if(z==1)
+        {
+            let a=y/0.32;
+            calculations.operations.value = a;
+        }
+        else if(z==2)
+        {
+            let b=y/0.20;
+            calculations.operations.value = b;
+        }
+        else if(z==3)
+        {
+            let c=y/0.40;
+            calculations.operations.value = c;
+        }
+        else if(z==4)
+        {
+            let d=y/0.50;
+            calculations.operations.value = d;
+        }
+        else if(z==5)
+        {
+            let e=y/0.25;
+            calculations.operations.value = e;
+        }       
+    }
+    </script>
+    </div>
+</body>
+</html>
